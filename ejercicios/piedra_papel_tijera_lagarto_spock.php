@@ -27,10 +27,12 @@ function jugador1() {
 
         echo "Opción no válida. Inténtalo de nuevo.\n";
     }
+
+
+
 }
 
 function jugador2() {
-    $jugador2 = rand(1, 5);
     $opciones = [
         1 => "Piedra",
         2 => "Papel",
@@ -39,10 +41,31 @@ function jugador2() {
         5 => "Spock"
     ];
 
-    echo "Jugador 2 eligió " . $opciones[$jugador2] . "\n\n";
-    return $jugador2;
+    echo "Elige una opción:\n";
+    foreach ($opciones as $key => $value) {
+        echo "$key: $value\n";
+    }
+
+    while (true) {
+        echo "Jugador2, ingresa un número entre 1 y 5: ";
+        $input = trim(fgets(STDIN));
+
+       
+        if (ctype_digit($input) && array_key_exists(intval($input), $opciones)) {
+            $jugador2 = intval($input);
+            echo "Jugador 2 eligió " . $opciones[$jugador2] . "\n\n";
+            return $jugador2;
+        }
+
+        echo "Opción no válida. Inténtalo de nuevo.\n";
+    }
+
+
+
 }
 
+
+  // php piedra_papel_tijera_lagarto_spock.php 0 3
 /*
  * La matriz $resultados define las reglas del juego:
  * - 1 (Piedra) vence a 3 (Tijera) y 4 (Lagarto), pero pierde contra 2 (Papel) y 5 (Spock).
@@ -68,9 +91,17 @@ function piedra_papel_tijera_lagarto_spock($jugador1, $jugador2) {
     }
 }
 
-// Ejecutar el juego
-$jugador1 = jugador1();
-$jugador2 = jugador2();
+// Llamar a las funciones y jugar
+if ($argc > 2) {
+    $jugador1 = intval($argv[1]);
+    $jugador2 = intval($argv[2]);
+} else {
+    $jugador1 = jugador1();
+    $jugador2 = jugador2();
+}
+
 piedra_papel_tijera_lagarto_spock($jugador1, $jugador2);
+
+
 
 ?>
