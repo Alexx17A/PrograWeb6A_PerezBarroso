@@ -108,7 +108,7 @@ piedra_papel_tijera_lagarto_spock($jugador1, $jugador2);
 
 ?>
 
-<!-- PARA EJECUTAR EL PROGRAMA USAR =   php piedra_papel_tijera_lagarto_spock.php  -->
+<!-- PARA EJECUTAR EL PROGRAMA USAR  =   php  piedra_papel_tijera_lagarto_spock.php   -->
 
 
 <!-- DONDE LE SALDRA UN MENU EL CUAL PODRA ELEGIR LAS OPCIONES DEL JUEGO  -->
