@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #tablero {
+            display: grid;
+            gap: 2px;
+            margin: 20px auto;
+        }
+        .celda {
+            width: 30px;
+            height: 30px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border: 1px solid #aaa;
+            cursor: pointer;
+        }
+        .revelada {
+            background-color: white !important;
+        }
+        .bandera {
+            background-color: yellow !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscaminas</h1>
+    <label for="nivel">Selecciona nivel:</label>
+    <select id="nivel">
+        <option value="facil">Fácil (8x8)</option>
+        <option value="medio">Medio (16x16)</option>
+        <option value="dificil">Difícil (16x30)</option>
+    </select>
+    <div id="tablero"></div>
+    
+    <script>
+        let tableroActual = []; // Almacena el estado del tablero.
+        let juegoTerminado = false; // Indica si el juego ha terminado.
+
+        /**
+         * Genera el tablero de juego según el tamaño especificado.
+         * @param {number} filas - Número de filas del tablero.
+         * @param {number} columnas - Número de columnas del tablero.
+         */
+        function generarTablero(filas, columnas) {
+            var tablero = document.getElementById("tablero");
+            tablero.innerHTML = ""; // Limpiar el tablero antes de generarlo.
+            tableroActual = Array(filas).fill().map(() => Array(columnas).fill(0)); // Crear una matriz vacía.
+            juegoTerminado = false; // Reiniciar el estado del juego.
+
+            for (var i = 0; i < filas; i++) {
+                for (var j = 0; j < columnas; j++) {
+                    var celda = document.createElement("div");
+                    celda.className = "celda";
+                    celda.dataset.fila = i;
+                    celda.dataset.columna = j;
+
+                    // CLICK IZQUIERDO - Revelar celda
+                    celda.addEventListener("click", async (e) => {
+                        if (juegoTerminado || e.target.classList.contains('bandera')) return;
+
+                        const fila = e.target.dataset.fila;
+                        const columna = e.target.dataset.columna;
+
+                        // Envío de datos al servidor para revelar celda
+                        await fetch('revelar_celda.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ fila, columna })
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            e.target.classList.add('revelada');
+
+                            if (data.valor === -1) { // Si es una mina
+                                e.target.innerHTML = '💣';
+                                terminarJuego(); // Terminar el juego.
+                            } else {
+                                e.target.textContent = data.valor; // Mostrar el número de minas cercanas.
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                    });
+
+                    // CLICK DERECHO - Colocar bandera
+                    celda.addEventListener("contextmenu", (e) => {
+                        e.preventDefault(); // Evitar menú contextual por defecto.
+                        if (juegoTerminado) return;
+
+                        if (e.target.classList.contains("bandera")) {
+                            e.target.classList.remove("bandera");
+                            e.target.innerHTML = "";
+                        } else {
+                            e.target.classList.add("bandera");
+                            e.target.innerHTML = "🚩";
+                        }
+                    });
+
+                    tablero.appendChild(celda); // Agregar celda al tablero.
+                }
+            }
+
+            // Ajustar la cantidad de columnas en la cuadrícula CSS.
+            tablero.style.gridTemplateColumns = `repeat(${columnas}, 30px)`;
+        }
+
+        /**
+         * Finaliza el juego mostrando todas las minas.
+         */
+        function terminarJuego() {
+            juegoTerminado = true;
+
+            document.querySelectorAll('.celda').forEach(celda => {
+                celda.style.pointerEvents = "none"; // Deshabilitar interacciones.
+            });
+
+            fetch('revelar_todas_las_minas.php')
+            .then(response => response.json())
+            .then(data => {
+                data.minas.forEach(mina => {
+                    let celda = document.querySelector(`[data-fila='${mina.fila}'][data-columna='${mina.columna}']`);
+                    celda.innerHTML = '💣';
+                    celda.classList.add('revelada');
+                });
+                setTimeout(() => alert("¡Perdiste!"), 500);
+            });
+        }
+
+        /**
+         * Maneja el evento de cambio de nivel y genera un nuevo tablero.
+         */
+        document.querySelector('#nivel').addEventListener('change', async (e) => {
+            var nivel = document.getElementById("nivel").value;
+            var filas, columnas;
+
+            switch (nivel) {
+                case "facil": filas = 8; columnas = 8; break;
+                case "medio": filas = 16; columnas = 16; break;
+                case "dificil": filas = 16; columnas = 30; break;
+            }
+
+            // Envío de datos al servidor para generar el nuevo tablero.
+            await fetch('generar_tablero.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nivel })
+            });
+                // y pues genera el tablero teniendo en cuenta las filas y columnas seleccionadas con el nivel y los cases
+            generarTablero(filas, columnas);
+        });
+    </script>
+</body>
+</html>
