@@ -1,5 +1,4 @@
 <?php
-include 'UsuarioDAO.php';
 class Usuario
 {
     private $id;
@@ -19,48 +18,63 @@ class Usuario
         $this->password = $password;
     }
 
-    // Getters y setters
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function getNombres() {
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getNombres()
+    {
         return $this->nombres;
     }
 
-    public function setNombres($nombres) {
+    public function setNombres($nombres)
+    {
         $this->nombres = $nombres;
     }
 
-    public function getApellidos() {
+    public function getApellidos()
+    {
         return $this->apellidos;
     }
 
-    public function setApellidos($apellidos) {
+    public function setApellidos($apellidos)
+    {
         $this->apellidos = $apellidos;
     }
 
-    public function getUsuario() {
+    public function getUsuario()
+    {
         return $this->usuario;
     }
 
-    public function setUsuario($usuario) {
+    public function setUsuario($usuario)
+    {
         $this->usuario = $usuario;
     }
 
-    public function getCorreo() {
+    public function getCorreo()
+    {
         return $this->correo;
     }
 
-    public function setCorreo($correo) {
+    public function setCorreo($correo)
+    {
         $this->correo = $correo;
     }
 
-    public function getPassword() {
+    public function getPassword()
+    {
         return $this->password;
     }
 
-    public function setPassword($password) {
+    public function setPassword($password)
+    {
         $this->password = $password;
     }
 }

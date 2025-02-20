@@ -5,41 +5,69 @@ require_once 'UsuarioDAO.php';
 
 $usuarioDAO = new UsuarioDAO();
 
-// Crear el primer usuario (Bugs Bunny)
+// Crear usuario bugs
 $bugs = new Usuario();
 $bugs->setNombres("Bugs");
 $bugs->setApellidos("Bunny");
-$bugs->setUsuario("bugs123"); // Proporciona un valor para 'usuario'
+$bugs->setUsuario("bugs123");
 $bugs->setCorreo("bugsBunny@wb.com");
-$bugs->setPassword("password123"); // Proporciona un valor para 'password'
+$bugs->setPassword("password123");
 
-// Crear el segundo usuario (Lola Bunny)
+
+// Crear usuario lola
 $lola = new Usuario();
 $lola->setNombres("Lola");
 $lola->setApellidos("Bunny");
-$lola->setUsuario("lola123"); // Proporciona un valor para 'usuario'
+$lola->setUsuario("lola123");
 $lola->setCorreo("LolaBunny@wb.com");
-$lola->setPassword("password456"); // Proporciona un valor para 'password'
+$lola->setPassword("password456");
 
-// Crear el tercer usuario (Porky Pig)
+
+// Crear usuario daffy
+$daffy = new Usuario();
+$daffy->setNombres("Daffy");
+$daffy->setApellidos("Duck");
+$daffy->setUsuario("daffy123");
+$daffy->setCorreo("daffyDuck@wb.com");
+$daffy->setPassword("password555");
+
+
+// Crear usuario porky
 $porky = new Usuario();
 $porky->setNombres("Porky");
 $porky->setApellidos("Pig");
-$porky->setUsuario("porky123"); // Proporciona un valor para 'usuario'
+$porky->setUsuario("porky123");
 $porky->setCorreo("porkypig@wb.com");
-$porky->setPassword("password789"); // Proporciona un valor para 'password'
+$porky->setPassword("password789");
 
-// Insertar los usuarios en la base de datos
+// Insertar usuarios
 $usuarioDAO->insertar($bugs);
 $usuarioDAO->insertar($lola);
+$usuarioDAO->insertar($daffy);
 $usuarioDAO->insertar($porky);
 
 // Actualizar el correo de Porky Pig
-$porky->setCorreo('porkypig@wb.com'); // Correo corregido
+$porky->setCorreo('porkypigito@wb.com');
 $usuarioDAO->actualizar($porky);
 
 // Eliminar a Bugs Bunny
-$usuarioDAO->eliminar($bugs->getId());
+$usuarioDAO->eliminar($bugs->getId()); //osea este no va estar en la tabla cuando se actualice (envien los datos)
 
+// Mostrar la lista actualizada de usuarios
+$usuarios = $usuarioDAO->buscarTodos();
 
+//mostrar los datos aca bonito
+echo "<table border='1'>";
+echo "<tr><th>ID</th><th>Nombres</th><th>Apellidos</th><th>Usuario</th><th>Correo</th><th>Password</th></tr>";
+foreach ($usuarios as $usuario) {
+    echo "<tr>";
+    echo "<td>" . $usuario->getId() . "</td>";
+    echo "<td>" . $usuario->getNombres() . "</td>";
+    echo "<td>" . $usuario->getApellidos() . "</td>";
+    echo "<td>" . $usuario->getUsuario() . "</td>";
+    echo "<td>" . $usuario->getCorreo() . "</td>";
+    echo "<td>" . $usuario->getPassword() . "</td>";
+    echo "</tr>";
+}
+echo "</table>";
 ?>

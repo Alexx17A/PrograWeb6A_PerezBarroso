@@ -25,16 +25,15 @@ class UsuarioDAO implements IDao
                 $usuarioData['id'],
                 $usuarioData['nombres'],
                 $usuarioData['apellidos'],
-                $usuarioData['usuario'], // Incluye el valor de 'usuario'
+                $usuarioData['usuario'],
                 $usuarioData['correo'],
-                $usuarioData['password'] // Incluye el valor de 'password'
+                $usuarioData['password']
             );
             array_push($usuarios, $usuario);
         }
     
         return $usuarios;
     }
-
 
     public function buscar($id)
     {
@@ -51,34 +50,34 @@ class UsuarioDAO implements IDao
     $values = [
         ':nombres' => $usuario->getNombres(),
         ':apellidos' => $usuario->getApellidos(),
-        ':usuario' => $usuario->getUsuario(), // Incluye el valor de 'usuario'
+        ':usuario' => $usuario->getUsuario(),
         ':correo' => $usuario->getCorreo(),
-        ':password' => $usuario->getPassword() // Incluye el valor de 'password'
+        ':password' => $usuario->getPassword()
     ];
 
-    return $this->dataSource->ejecutarActualizacion($sql, $values);
+    $this->dataSource->ejecutarActualizacion($sql, $values);
+    $usuario->setId($this->dataSource->getLastInsertId()); // Asignar el ID generado
 }
 
     public function actualizar(Usuario $usuario)
-    {
-        $sql = "UPDATE usuarios SET nombres = :nombres, apellidos = :apellidos, correo = :correo WHERE id = :id";
-        $values = [
-            ':id' => $usuario->getId(),
-            ':nombres' => $usuario->getNombres(),
-            ':apellidos' => $usuario->getApellidos(),
-            ':correo' => $usuario->getCorreo()
-        ];
-        return $this->dataSource->ejecutarActualizacion($sql, $values);
-    }
-
-    public function eliminar($id)
 {
-    $sql = "DELETE FROM usuarios WHERE id = :id";
-    $values = [':id' => $id];
+    $sql = "UPDATE usuarios SET nombres = :nombres, apellidos = :apellidos, usuario = :usuario, correo = :correo, password = :password WHERE id = :id";
+    $values = [
+        ':id' => $usuario->getId(),
+        ':nombres' => $usuario->getNombres(),
+        ':apellidos' => $usuario->getApellidos(),
+        ':usuario' => $usuario->getUsuario(),
+        ':correo' => $usuario->getCorreo(),
+        ':password' => $usuario->getPassword()
+    ];
     return $this->dataSource->ejecutarActualizacion($sql, $values);
 }
 
-
-
-
+    public function eliminar($id){
+    $sql = "DELETE FROM usuarios WHERE id = :id";
+    $values = [':id' => $id];
+    return $this->dataSource->ejecutarActualizacion($sql, $values);
+        }
 }
+
+?>     
