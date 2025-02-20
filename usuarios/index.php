@@ -55,19 +55,8 @@ $usuarioDAO->eliminar($bugs->getId()); //osea este no va estar en la tabla cuand
 
 // Mostrar la lista actualizada de usuarios
 $usuarios = $usuarioDAO->buscarTodos();
-
-//mostrar los datos aca bonito
-echo "<table border='1'>";
-echo "<tr><th>ID</th><th>Nombres</th><th>Apellidos</th><th>Usuario</th><th>Correo</th><th>Password</th></tr>";
 foreach ($usuarios as $usuario) {
-    echo "<tr>";
-    echo "<td>" . $usuario->getId() . "</td>";
-    echo "<td>" . $usuario->getNombres() . "</td>";
-    echo "<td>" . $usuario->getApellidos() . "</td>";
-    echo "<td>" . $usuario->getUsuario() . "</td>";
-    echo "<td>" . $usuario->getCorreo() . "</td>";
-    echo "<td>" . $usuario->getPassword() . "</td>";
-    echo "</tr>";
+    echo $usuario->getNombres() . " " . $usuario->getApellidos() ." " . $usuario->getCorreo() . "<br>";
 }
-echo "</table>";
+
 ?>
