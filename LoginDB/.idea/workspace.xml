@@ -9,38 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Login/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Login/ProgramacionWeb_ITS_Prac4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/Conexion/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/resources/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/Login.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Login/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/JsonResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" afterDir="false" />
+    <list default="true" id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="espero no explote mi archivos">
+      <change beforePath="$PROJECT_DIR$/../Login/ProgramacionWeb_ITS_Prac4" beforeDir="false" afterPath="$PROJECT_DIR$/../Login/ProgramacionWeb_ITS_Prac4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,8 +203,17 @@
       <workItem from="1743184261361" duration="7100000" />
       <workItem from="1743513825052" duration="775000" />
       <workItem from="1743518810467" duration="9106000" />
-      <workItem from="1743614172395" duration="291000" />
+      <workItem from="1743614172395" duration="654000" />
     </task>
+    <task id="LOCAL-00001" summary="espero no explote mi archivos">
+      <option name="closed" value="true" />
+      <created>1743614592431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743614592432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,5 +223,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="espero no explote mi archivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="espero no explote mi archivos" />
   </component>
 </project>
