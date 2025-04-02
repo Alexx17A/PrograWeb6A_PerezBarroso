@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Login" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Login/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/ProgramacionWeb_ITS_Prac4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/Conexion/Conexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/resources/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/Login.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Login/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/JsonResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2fEh5jvPrvcUW9B5aM5XIoogbOA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TomEE Server.TomEE 10.0.27.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejandro/Documents/UNIVERSIDAD/6to Semestre/ProgramacioWeb/PrograWeb6A_PerezBarroso/LoginDB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="22">
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/LoginDB" />
+          </settings>
+        </file>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/LoginDB" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="242efb25-376a-465b-bfc6-31a850183a38" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61780" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="" />
+      <created>1713371965571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713371965571</updated>
+      <workItem from="1713371966677" duration="374000" />
+      <workItem from="1713372353741" duration="15262000" />
+      <workItem from="1714349928063" duration="6705000" />
+      <workItem from="1714392586874" duration="6718000" />
+      <workItem from="1714414121517" duration="233000" />
+      <workItem from="1714445429947" duration="242000" />
+      <workItem from="1714445835498" duration="668000" />
+      <workItem from="1714447360713" duration="70000" />
+      <workItem from="1743184261361" duration="7100000" />
+      <workItem from="1743513825052" duration="775000" />
+      <workItem from="1743518810467" duration="9106000" />
+      <workItem from="1743614172395" duration="291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
