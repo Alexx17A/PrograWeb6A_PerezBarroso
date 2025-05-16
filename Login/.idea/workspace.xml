@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Login" />
+      <artifact name="ProgramacionWeb_ITS_Prac1:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,10 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c525408d-24f5-4100-84a4-45615d4e4fee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramacionWeb_ITS_Prac4/src/main/java/com/example/programacionweb_its_prac1/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conexion/Conexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/AutenticacionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/programacionweb_its_prac1/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +33,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alexx17A&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/juaaachuc/ProgramacionWeb_ITS_Prac4.git&quot;,
+    &quot;accountId&quot;: &quot;f9d1fee6-29d3-4e13-b52d-c498bb1ae888&quot;
+  }
+}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -59,41 +76,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TomEE Server.TomEE 10.0.27.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Alejandro/Documents/UNIVERSIDAD/6to Semestre/ProgramacioWeb/Parcial2/practica5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TomEE Server.TomEE 10.0.27.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejandro/Documents/UNIVERSIDAD/6to Semestre/ProgramacioWeb/PrograWeb6A_PerezBarroso/LoginDB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="22">
+    <configuration name="TomEE 10.0.27" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.0.27" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../jdk/jdk-21.0.1">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/programacion-web-its-prac4/" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <file path="$PROJECT_DIR$">
+        <artifact name="ProgramacionWeb_ITS_Prac1:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/Login" />
-          </settings>
-        </file>
-        <artifact name="Login">
-          <settings>
-            <option name="CONTEXT_PATH" value="/programacion-web-its-prac4" />
+            <option name="CONTEXT_PATH" value="/ProgramacionWeb_ITS_Prac1_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -172,7 +184,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ProgramacionWeb_ITS_Prac1:war exploded" />
-          <artifact name="Login" />
         </option>
       </method>
     </configuration>
@@ -201,8 +212,9 @@
       <workItem from="1714445429947" duration="242000" />
       <workItem from="1714445835498" duration="668000" />
       <workItem from="1714447360713" duration="70000" />
-      <workItem from="1743184261361" duration="7100000" />
-      <workItem from="1743513825052" duration="775000" />
+      <workItem from="1743629590087" duration="5536000" />
+      <workItem from="1743784279545" duration="5526000" />
+      <workItem from="1744118920562" duration="534000" />
     </task>
     <servers />
   </component>
